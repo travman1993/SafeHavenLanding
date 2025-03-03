@@ -1,0 +1,214 @@
+/* 
+   SafeHaven Landing Page Animations
+   These animations enhance the landing page experience with subtle movements
+*/
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In Left Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In Right Animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Applying animations to elements */
+
+/* Hero Section Animations */
+.hero-text h1 {
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-text p {
+    animation: slideInLeft 1s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+.download-btn {
+    animation: slideInLeft 1s ease-out 0.4s;
+    animation-fill-mode: both;
+}
+
+.hero-image {
+    animation: slideInRight 1s ease-out 0.3s;
+    animation-fill-mode: both;
+}
+
+/* Features Section Animations */
+.feature-card {
+    animation: fadeIn 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+/* About Section Animations */
+.about-image {
+    animation: fadeIn 1s ease-out;
+}
+
+.about-text h2 {
+    animation: slideUp 1s ease-out;
+}
+
+.about-text p {
+    animation: slideUp 1s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+/* FAQ Animations */
+.faq-item {
+    animation: fadeIn 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.faq-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.faq-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.faq-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.faq-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.faq-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.faq-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Premium Feature Animations */
+.premium-feature {
+    animation: fadeIn 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.premium-feature:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.premium-feature:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.premium-feature:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.premium-feature:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+/* Screenshot Carousel Hover Animation */
+.screenshot img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* CTA Pulse Animation */
+.app-store-btn:hover img {
+    animation: pulse 2s infinite;
+}
+
+/* Section entry animations via JavaScript (these classes will be added by JS on scroll) */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.fade-in {
+    opacity: 0;
+}
+
+.animate-on-scroll.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.animate-on-scroll.slide-left {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.animate-on-scroll.slide-right {
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
