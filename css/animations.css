@@ -262,4 +262,8 @@
 
 .scroll-icon i {
     animation: bounce 2s infinite;
+} {
+    transition: transform 0.3s ease;
 }
+
+.screenshot img

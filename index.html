@@ -14,13 +14,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/app-icon.png">
-    
-    <!-- Preload critical assets -->
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="preload" href="css/animations.css" as="style">
-    <link rel="preload" href="images/app-icon.png" as="image">
-    <link rel="preload" href="images/screenshots/screen1.png" as="image">
-    
+      
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -89,44 +83,47 @@
         </section>
 
         <!-- Features Section -->
-        <section id="features" class="features">
+        <section id="features" class="features-dark">
             <div class="container">
-                <div class="section-header">
-                    <h2>How SafeHaven Helps You</h2>
-                    <p>Designed to provide comprehensive support right when you need it</p>
+              <div class="features-grid-dark">
+                <!-- Feature 1 -->
+                <div class="feature-item-dark">
+                  <div class="feature-icon-dark">
+                    <img src="images/icons/map-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <h3>Resource Finder</h3>
+                  <p>Quickly locate shelters, food banks, healthcare, and other vital services near you.</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/map-icon.svg" alt="" aria-hidden="true" width="80" height="80">
-                        </div>
-                        <h3>Resource Finder</h3>
-                        <p>Quickly locate shelters, food banks, healthcare, and other vital services near you.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/emergency-icon.svg" alt="" aria-hidden="true" width="80" height="80">
-                        </div>
-                        <h3>Emergency Features</h3>
-                        <p>One-slide access to emergency services with automated notifications to your trusted contacts.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/journal-icon.svg" alt="" aria-hidden="true" width="80" height="80">
-                        </div>
-                        <h3>Daily Journal</h3>
-                        <p>Track your emotional well-being and progress with a private, secure journal.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <img src="images/icons/motivation-icon.svg" alt="" aria-hidden="true" width="80" height="80">
-                        </div>
-                        <h3>Daily Motivation</h3>
-                        <p>Receive uplifting quotes and guidance to help maintain a positive mindset.</p>
-                    </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-item-dark">
+                  <div class="feature-icon-dark">
+                    <img src="images/icons/emergency-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <h3>Emergency Features</h3>
+                  <p>One-slide access to emergency services with automated notifications to your trusted contacts.</p>
                 </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-item-dark">
+                  <div class="feature-icon-dark">
+                    <img src="images/icons/journal-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <h3>Daily Journal</h3>
+                  <p>Track your emotional well-being and progress with a private, secure journal.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-item-dark">
+                  <div class="feature-icon-dark">
+                    <img src="images/icons/motivation-icon.svg" alt="" aria-hidden="true">
+                  </div>
+                  <h3>Daily Motivation</h3>
+                  <p>Receive uplifting quotes and guidance to help maintain a positive mindset.</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </section>
 
         <!-- App Screenshots -->
         <section class="screenshots">
@@ -152,6 +149,34 @@
                         <img src="images/screenshots/screen4.png" alt="Journal and Wellness screen for tracking emotional well-being" width="250" height="500" loading="lazy">
                         <p>Journal & Wellness</p>
                     </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen5.png" alt="Resources Directory screen showing available support services" width="250" height="500" loading="lazy">
+                        <p>Resources Directory</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen6.png" alt="Daily Motivation screen with inspirational quotes" width="250" height="500" loading="lazy">
+                        <p>Daily Motivation</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen7.png" alt="Task Planner screen for organizing daily activities" width="250" height="500" loading="lazy">
+                        <p>Task Planner</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen8.png" alt="Settings screen for app customization" width="250" height="500" loading="lazy">
+                        <p>Settings</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen9.png" alt="Profile screen showing user information" width="250" height="500" loading="lazy">
+                        <p>User Profile</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen10.png" alt="Notifications screen showing alerts and reminders" width="250" height="500" loading="lazy">
+                        <p>Notifications</p>
+                    </div>
+                    <div class="screenshot">
+                        <img src="images/screenshots/screen11.png" alt="Help & Support screen with FAQ and contact options" width="250" height="500" loading="lazy">
+                        <p>Help & Support</p>
+                    </div>
                 </div>
                 <div class="carousel-controls" aria-hidden="true">
                     <button class="prev-btn" aria-label="Previous Screenshot"><i class="fas fa-chevron-left"></i></button>
@@ -161,18 +186,38 @@
             </div>
         </section>
 
-        <!-- About Section -->
+    <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
+                <div class="section-header">
+                    <h2>About SafeHaven</h2>
+                    <p>Our mission is to provide support and safety when you need it most</p>
+                </div>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="images/app-icon.png" alt="SafeHaven App Icon" class="about-img" width="300" height="300" loading="lazy">
+                        <img src="images/app-icon.png" alt="SafeHaven App Icon" class="about-img" width="300" height="300">
                     </div>
                     <div class="about-text">
                         <h2>The Story Behind SafeHaven</h2>
                         <p>I'm a single father who started with nothing but a dream to make a difference. Growing up with limited resources taught me the value of resilience and community support.</p>
                         <p>The idea for SafeHaven came from my own experiences navigating difficult times. I realized how valuable it would have been to have a single resource that connected people with all the support services available to them.</p>
                         <p>SafeHaven began as a personal project to help people find resources during challenging times. As a self-taught developer, each feature represents countless hours of learning and determination.</p>
+                
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10k+</span>
+                                <span class="stat-label">Active Users</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Resources Listed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24<small>/7</small></span>
+                                <span class="stat-label">Support Available</span>
+                         </div>
+                        </div>
+                
                         <a href="#" class="read-more-btn">Read My Full Story</a>
                     </div>
                 </div>
@@ -188,22 +233,30 @@
                 </div>
                 <div class="premium-grid">
                     <div class="premium-feature">
-                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        <div class="premium-icon">
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                        </div>
                         <h3>Emergency SOS</h3>
                         <p>Quick access to emergency services with automated texts to contacts</p>
                     </div>
                     <div class="premium-feature">
-                        <i class="fas fa-book" aria-hidden="true"></i>
+                        <div class="premium-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </div>
                         <h3>Daily Journal</h3>
                         <p>Track your mood and thoughts with a personal journal</p>
                     </div>
                     <div class="premium-feature">
-                        <i class="fas fa-list-check" aria-hidden="true"></i>
+                        <div class="premium-icon">
+                            <i class="fas fa-list-check" aria-hidden="true"></i>
+                        </div>
                         <h3>Todo List</h3>
                         <p>Organize your daily tasks with a simple todo list</p>
                     </div>
                     <div class="premium-feature">
-                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        <div class="premium-icon">
+                            <i class="fas fa-quote-right" aria-hidden="true"></i>
+                        </div>
                         <h3>Motivation Quotes</h3>
                         <p>Access personalized motivational quotes and inspiration</p>
                     </div>

@@ -168,7 +168,7 @@ function lazyLoadImages() {
 }
 
 /**
- * Initialize the screenshots carousel with improved accessibility
+ * Initialize the screenshots carousel with improved functionality
  */
 function initCarousel() {
     const carousel = document.querySelector('.screenshots-carousel');
@@ -180,9 +180,12 @@ function initCarousel() {
     if (!carousel || screenshots.length === 0) return;
     
     let currentIndex = 0;
-    const slideWidth = screenshots[0].offsetWidth + 20; // 20px is the gap
+    const slideWidth = screenshots[0].offsetWidth + parseInt(window.getComputedStyle(screenshots[0]).marginRight);
     
-    // Create carousel dots
+    // Clear existing dots
+    dotsContainer.innerHTML = '';
+    
+    // Create dots (one for each screenshot)
     screenshots.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('dot');
@@ -261,9 +264,11 @@ function initCarousel() {
         // Update button states
         if (prevBtn) {
             prevBtn.disabled = currentIndex === 0;
+            prevBtn.setAttribute('aria-disabled', currentIndex === 0);
         }
         if (nextBtn) {
             nextBtn.disabled = currentIndex === screenshots.length - 1;
+            nextBtn.setAttribute('aria-disabled', currentIndex === screenshots.length - 1);
         }
     }
     
@@ -293,6 +298,16 @@ function initCarousel() {
                     dot.classList.toggle('active', index === currentIndex);
                     dot.setAttribute('aria-current', index === currentIndex ? 'true' : 'false');
                 });
+                
+                // Update button states
+                if (prevBtn) {
+                    prevBtn.disabled = currentIndex === 0;
+                    prevBtn.setAttribute('aria-disabled', currentIndex === 0);
+                }
+                if (nextBtn) {
+                    nextBtn.disabled = currentIndex === screenshots.length - 1;
+                    nextBtn.setAttribute('aria-disabled', currentIndex === screenshots.length - 1);
+                }
             }
         }, 100);
     });
@@ -323,6 +338,37 @@ function initCarousel() {
             goToSlide(Math.max(currentIndex - 1, 0));
         }
     }
+    
+    // Auto-advance the carousel every 5 seconds
+    let autoplayInterval;
+    
+    function startAutoplay() {
+        stopAutoplay(); // Clear any existing interval
+        autoplayInterval = setInterval(() => {
+            // Go to next slide or back to beginning if at the end
+            const nextIndex = currentIndex === screenshots.length - 1 ? 0 : currentIndex + 1;
+            goToSlide(nextIndex);
+        }, 5000);
+    }
+    
+    function stopAutoplay() {
+        if (autoplayInterval) {
+            clearInterval(autoplayInterval);
+        }
+    }
+    
+    // Start autoplay initially
+    startAutoplay();
+    
+    // Pause autoplay when user interacts with carousel
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('touchstart', stopAutoplay);
+    carousel.addEventListener('focus', stopAutoplay);
+    
+    // Resume autoplay when user stops interacting
+    carousel.addEventListener('mouseleave', startAutoplay);
+    carousel.addEventListener('touchend', startAutoplay);
+    carousel.addEventListener('blur', startAutoplay);
 }
 
 /**
@@ -490,3 +536,26 @@ function initSmoothScroll() {
         });
     });
 }
+// Add this at the end of your main.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Short delay to ensure the animation classes have been applied
+    setTimeout(function() {
+        console.log("Forcing animations to complete");
+        
+        // Force all animated elements to be visible
+        document.querySelectorAll('.animate-on-scroll').forEach(function(element) {
+            element.classList.add('visible');
+            console.log("Made visible:", element);
+        });
+        
+        // Specifically target About and Contact sections to ensure they're visible
+        const aboutElements = document.querySelectorAll('.about .animate-on-scroll');
+        const contactElements = document.querySelectorAll('.contact .animate-on-scroll');
+        
+        aboutElements.forEach(el => el.classList.add('visible'));
+        contactElements.forEach(el => el.classList.add('visible'));
+        
+        console.log("About elements made visible:", aboutElements.length);
+        console.log("Contact elements made visible:", contactElements.length);
+    }, 500);
+});

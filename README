@@ -1,0 +1,119 @@
+# SafeHaven Landing Page
+
+A responsive landing page for the SafeHaven app, designed to connect users with safety resources, emergency services, and support when they need it most.
+
+![SafeHaven Screenshot](images/screenshots/screen1.png)
+
+## Overview
+
+This landing page showcases the SafeHaven mobile app, highlighting its key features, screenshots, background story, and providing users with ways to download and contact the team. The page includes:
+
+- Responsive design that works on mobile, tablet, and desktop screens
+- Interactive UI elements with smooth animations
+- Accessibility features for all users
+- Optimized performance with lazy loading and efficient JavaScript
+
+## Project Structure
+
+```
+safehaven-landing/
+├── css/
+│   ├── animations.css    # Animation styles and effects
+│   └── styles.css        # Main stylesheet with responsive design
+├── images/
+│   ├── app-icon.png      # App icon and branding
+│   ├── icons/            # Feature icons and UI elements
+│   └── screenshots/      # App screenshots for carousel
+├── js/
+│   ├── animations.js     # Animation triggers and effects
+│   └── main.js           # Main JavaScript functionality
+├── index.html            # Main landing page
+├── favicon.ico           # Site favicon
+└── README.md             # Project documentation
+```
+
+## Features
+
+- **Hero Section**: App introduction with download links
+- **Features Grid**: Highlighting key app features with icons
+- **Screenshots Carousel**: Interactive display of app screens
+- **About Section**: Background story with statistics
+- **Premium Features**: Showcase of premium capabilities
+- **FAQ Section**: Accordion-style frequently asked questions
+- **Contact Form**: User feedback and inquiry form
+
+## Setup and Development
+
+### Prerequisites
+
+- A modern web browser
+- Basic understanding of HTML, CSS, and JavaScript
+- Code editor (VSCode, Sublime, etc.)
+
+### Local Development
+
+1. Clone this repository or download the files
+2. Open the folder in your code editor
+3. Use a local development server to preview the site:
+   - With VSCode: Install the "Live Server" extension and click "Go Live"
+   - With Python: Run `python -m http.server` in the project directory
+   - With Node.js: Install `http-server` via npm and run it in the project directory
+
+### Making Changes
+
+- **HTML Structure**: Edit `index.html` to modify content and structure
+- **Styling**: Modify `css/styles.css` for layout and design changes
+- **Animations**: Edit `css/animations.css` and `js/animations.js` for animation behaviors
+- **Functionality**: Update `js/main.js` for interactive features
+
+## Animation Notes
+
+The site uses scroll-based animations that reveal elements as the user scrolls down the page. Elements with the `.animate-on-scroll` class are initially hidden and revealed when they enter the viewport.
+
+If animations aren't triggering properly, check the `initScrollAnimations()` function in `main.js` or add this code to force visibility:
+
+```javascript
+document.querySelectorAll('.animate-on-scroll').forEach(function(element) {
+    element.classList.add('visible');
+});
+```
+
+## Browser Compatibility
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Android Chrome)
+
+## Accessibility Features
+
+- Semantic HTML structure
+- ARIA attributes on interactive elements
+- Keyboard navigation support
+- Skip to content link
+- Color contrast compliance
+- Reduced motion support
+
+## Performance Optimization
+
+- CSS and JavaScript minification (production)
+- Image optimization and lazy loading
+- Minimal DOM manipulations
+- Throttled scroll events
+- Preloading of critical assets
+
+## Credits
+
+- Fonts: Inter and Plus Jakarta Sans via Google Fonts
+- Icons: Font Awesome (version 6.4.0)
+- Animations: Custom implementation with CSS transitions and JavaScript
+- Images: Original app screenshots and custom icon designs
+
+## License
+
+All rights reserved. This landing page is for demonstration purposes only.
+
+---
+
+© 2025 SafeHaven. All rights reserved.
