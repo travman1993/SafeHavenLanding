@@ -1,0 +1,5 @@
+Copyright (c) 2025 SafeHaven / Travis Rodriguez. All rights reserved.
+
+This source code is proprietary and confidential. Unauthorized copying, use,
+distribution, or modification of this software, via any medium, is strictly
+prohibited without the express permission of the copyright holder.
