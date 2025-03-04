@@ -496,7 +496,7 @@ p {
     background-color: var(--color-card-bg); /* Or #FFFFFF if you want white */
     position: relative;
     z-index: 2; /* Make sure it's above any background elements */
-    color: var(--color-text-primary); /* Make text dark and visible */
+    color: var(--color-text-white); /* Make text dark and visible */
     padding: 10rem 0;
     margin-top: 3rem;
 }
@@ -984,7 +984,7 @@ p {
 .footer {
     padding: 6rem 0 2rem;
     background-color: var(--color-text-primary);
-    color: var(--color-text-white);
+    color: var(--color-primary);
 }
 
 .footer-content {
@@ -1015,7 +1015,7 @@ p {
     font-family: var(--font-family-heading);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--color-text-secondary);
+    color: var(--color-primary);
 }
 
 .footer-links {
@@ -1030,7 +1030,7 @@ p {
 
 .footer-column h4 {
     font-size: 1.8rem;
-    color: var(--color-text-white);
+    color: var(--color-primary);
     margin-bottom: 2rem;
 }
 
