@@ -493,10 +493,10 @@ p {
 }
 
 .about, .contact {
-    background-color: var(--color-card-bg); /* Or #FFFFFF if you want white */
+    background-color: var(--color-card-bg);
     position: relative;
-    z-index: 2; /* Make sure it's above any background elements */
-    color: var(--color-text-white); /* Make text dark and visible */
+    z-index: 2;
+    /* REMOVED: color: var(--color-text-white); */
     padding: 10rem 0;
     margin-top: 3rem;
 }
@@ -512,9 +512,14 @@ p {
     right: 0;
     z-index: 1;
 }
-
+.about .section-header h2 {
+    color: var(--color-text-primary);
+}
 .about .section-header {
     margin-bottom: 4rem;
+}
+.about .section-header p {
+    color: var(--color-text-secondary);
 }
 
 .about-content {
@@ -540,6 +545,23 @@ p {
 
 .about-img:hover {
     transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .stat-item {
+        /* Increase contrast for stat items on mobile */
+        background-color: rgba(106, 137, 204, 0.2);
+    }
+    
+    .stat-number {
+        /* Ensure stat numbers are clearly visible */
+        color: var(--color-primary-dark);
+    }
+    
+    .stat-label {
+        /* Ensure stat labels are clearly visible */
+        color: var(--color-text-primary);
+    }
 }
 
 .about-text {
