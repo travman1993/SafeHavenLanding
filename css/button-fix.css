@@ -18,6 +18,7 @@
     opacity: 1 !important;
     max-width: 200px !important;
     height: auto !important;
+    border-radius: 30px;
   }
   
   /* Fix for hero section download button */
@@ -45,62 +46,7 @@
     margin: 1.5rem auto !important;
   }
   
-  /* ===== FALLBACK BUTTON STYLES ===== */
-  /* These will create visible buttons even if the images don't load */
   
-  /* Add .app-store-btn-fallback class to your HTML buttons */
-  .app-store-btn-fallback {
-    display: inline-block !important;
-    background-color: #000000 !important;
-    color: #ffffff !important;
-    padding: 12px 24px !important;
-    border-radius: 8px !important;
-    font-weight: bold !important;
-    text-align: center !important;
-    font-size: 16px !important;
-    margin: 10px auto !important;
-    text-decoration: none !important;
-    min-width: 200px !important;
-    border: 1px solid #000000 !important;
-  }
-  
-  .app-store-btn-fallback:hover {
-    background-color: #333333 !important;
-    color: #ffffff !important;
-  }
-  
-  /* ===== MOBILE SPECIFIC FIXES ===== */
-  @media (max-width: 767px) {
-    .download-btn {
-      margin: 3rem auto !important;
-      text-align: center !important;
-      width: 100% !important;
-    }
-    
-    /* Fix About section text visibility */
-    .about-text p {
-      color: #000000 !important; /* Dark text for light backgrounds */
-    }
-    
-    /* For dark themed sections on mobile */
-    .premium .about-text p,
-    section.dark .about-text p {
-      color: #ffffff !important; /* Light text for dark backgrounds */
-    }
-    
-    /* Stats fixed for mobile */
-    .stat-item {
-      background-color: rgba(106, 137, 204, 0.2) !important;
-    }
-    
-    .stat-number {
-      color: #000000 !important;
-    }
-    
-    .stat-label {
-      color: #000000 !important;
-    }
-  }
   
   /* iPhone Pro Max and newer models */
   @media only screen 
