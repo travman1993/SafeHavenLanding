@@ -1,0 +1,108 @@
+/* SafeHaven Mobile CSS Fixes */
+
+/* Fix for App Store buttons visibility on mobile */
+@media (max-width: 767px) {
+    /* Ensure download buttons are visible with proper spacing */
+    .download-btn {
+      display: block !important;
+      margin: 2rem auto !important;
+      text-align: center !important;
+      width: 100% !important;
+      max-width: 200px !important;
+    }
+    
+    .app-store-btn {
+      display: inline-block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    
+    .app-store-btn img {
+      width: 200px !important;
+      height: auto !important;
+      max-width: 100% !important;
+      display: block !important;
+    }
+  
+    /* Premium section button fix */
+    .premium-cta {
+      display: block !important;
+      margin: 3rem auto !important;
+      text-align: center !important;
+    }
+    
+    /* Footer download button fix */
+    .footer-download-btn {
+      display: block !important;
+      margin: 1.5rem auto !important;
+      text-align: center !important;
+    }
+    
+    /* Fix text contrast issues in About section */
+    .about-text p {
+      color: var(--color-text-primary) !important;
+    }
+    
+    /* Increase contrast for stat items on mobile */
+    .stat-item {
+      background-color: rgba(106, 137, 204, 0.2) !important;
+    }
+    
+    .stat-number {
+      color: var(--color-primary-dark) !important;
+    }
+    
+    .stat-label {
+      color: var(--color-text-primary) !important;
+    }
+    
+    /* Fix for dark mode text color issues */
+    @media (prefers-color-scheme: dark) {
+      .about-text p,
+      .stat-label,
+      .stat-number {
+        color: #FFFFFF !important;
+      }
+      
+      .stat-item {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+      }
+    }
+    
+    /* Force visibility of buttons and important UI elements */
+    .download-btn,
+    .premium-cta .app-store-btn,
+    .footer-download-btn .app-store-btn {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      z-index: 10 !important;
+    }
+  }
+  
+  /* iPhone specific fixes */
+  @media only screen 
+  and (device-width: 428px) 
+  and (device-height: 926px) 
+  and (-webkit-device-pixel-ratio: 3),
+  only screen 
+  and (device-width: 390px) 
+  and (device-height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    /* iPhone Pro Max specific fixes */
+    .download-btn {
+      margin: 3rem auto !important;
+    }
+    
+    .about-text p {
+      color: #FFFFFF !important;
+    }
+    
+    .about {
+      color: #FFFFFF !important;
+    }
+    
+    .stat-label {
+      color: #FFFFFF !important;
+    }
+  }
