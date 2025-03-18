@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SafeHaven</title>
+    <meta name="description" content="SafeHaven Privacy Policy - Learn how we protect your data and privacy.">
+    <meta name="theme-color" content="#6A89CC">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/app-icon.png">
+      
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-fixes.css">
+    <link rel="stylesheet" href="css/button-fix.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <style>
+        /* Privacy Policy specific styles */
+        .privacy-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--color-card-bg);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .privacy-content h2 {
+            color: var(--color-primary);
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.4rem;
+        }
+        
+        .privacy-content h3 {
+            color: var(--color-primary-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .privacy-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .privacy-content ul, 
+        .privacy-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .privacy-content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+        
+        .privacy-content .last-updated {
+            font-style: italic;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        .privacy-content .table-of-contents {
+            background-color: rgba(106, 137, 204, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius-sm);
+            margin-bottom: 3rem;
+        }
+        
+        .privacy-content .table-of-contents h3 {
+            margin-top: 0;
+        }
+        
+        .privacy-content .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .privacy-content .table-of-contents li {
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-content .table-of-contents a {
+            text-decoration: none;
+            color: var(--color-primary);
+            transition: color 0.3s ease;
+        }
+        
+        .privacy-content .table-of-contents a:hover {
+            color: var(--color-primary-dark);
+            text-decoration: underline;
+        }
+        
+        .privacy-section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 100px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 5rem;
+            height: 5rem;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            box-shadow: var(--shadow-md);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--color-primary-dark);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .privacy-content {
+                padding: 1.5rem;
+            }
+            
+            .privacy-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .privacy-content h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/app-icon.png" alt="SafeHaven Logo" class="logo-img" width="48" height="48">
+                        <span class="logo-text">SafeHaven</span>
+                    </a>
+                </div>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="privacy-policy">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Privacy Policy</h1>
+                    <p>How we protect your information and respect your privacy</p>
+                </div>
+                
+                <div class="privacy-content">
+                    <p class="last-updated">Last Updated: March 17, 2025</p>
+                    
+                    <div class="table-of-contents">
+                        <h3>Contents</h3>
+                        <ul>
+                            <li><a href="#introduction">1. Introduction</a></li>
+                            <li><a href="#information-collection">2. Information We Collect</a></li>
+                            <li><a href="#information-use">3. How We Use Your Information</a></li>
+                            <li><a href="#information-sharing">4. Information Sharing and Disclosure</a></li>
+                            <li><a href="#data-security">5. Data Security</a></li>
+                            <li><a href="#childrens-privacy">6. Children's Privacy</a></li>
+                            <li><a href="#your-rights">7. Your Rights and Choices</a></li>
+                            <li><a href="#california-privacy">8. California Privacy Rights</a></li>
+                            <li><a href="#international-users">9. International Users</a></li>
+                            <li><a href="#policy-updates">10. Privacy Policy Updates</a></li>
+                            <li><a href="#contact-us">11. Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="introduction" class="privacy-section">
+                        <h2>1. Introduction</h2>
+                        <p>Welcome to SafeHaven ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App") and related services.</p>
+                        <p>By downloading, accessing, or using SafeHaven, you agree to the collection and use of information in accordance with this policy. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+                    </div>
+                    
+                    <div id="information-collection" class="privacy-section">
+                        <h2>2. Information We Collect</h2>
+                        <p>We collect several types of information for various purposes to provide and improve our service to you:</p>
+                        
+                        <h3>2.1 Information You Provide</h3>
+                        <ul>
+                            <li><strong>Account Information:</strong> When you create an account, we may collect your name, email address, phone number, and emergency contact information.</li>
+                            <li><strong>User Content:</strong> Information you provide through the App, such as journal entries, task lists, and feedback.</li>
+                            <li><strong>Emergency Information:</strong> Contact details for your trusted contacts who may receive alerts during emergency situations.</li>
+                        </ul>
+                        
+                        <h3>2.2 Information Collected Automatically</h3>
+                        <ul>
+                            <li><strong>Location Data:</strong> With your permission, we collect your device's precise or approximate location to help you find nearby resources and for emergency services.</li>
+                            <li><strong>Usage Data:</strong> Information about how you use the App, including the features you access, the time and duration of your visits, and your interactions with the App.</li>
+                            <li><strong>Device Information:</strong> Information about your mobile device, including device model, operating system, unique device identifiers, IP address, and mobile network information.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="information-use" class="privacy-section">
+                        <h2>3. How We Use Your Information</h2>
+                        <p>We use the collected information for various purposes, including:</p>
+                        <ul>
+                            <li>To provide, maintain, and improve the App and its features</li>
+                            <li>To identify and suggest appropriate resources based on your location and needs</li>
+                            <li>To facilitate communication with emergency services and your trusted contacts during emergency situations</li>
+                            <li>To provide personalized content, such as journal prompts and motivational quotes</li>
+                            <li>To respond to your inquiries, comments, or concerns</li>
+                            <li>To send you technical notices, updates, security alerts, and support messages</li>
+                            <li>To monitor and analyze usage patterns and trends to improve user experience</li>
+                            <li>To protect the safety, security, and integrity of our App, users, and the public</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="information-sharing" class="privacy-section">
+                        <h2>4. Information Sharing and Disclosure</h2>
+                        <p>We may share your information in the following situations:</p>
+                        
+                        <h3>4.1 With Your Consent</h3>
+                        <p>We may share your information with third parties when you have given us your consent to do so, such as when you activate the emergency feature to share your location with trusted contacts.</p>
+                        
+                        <h3>4.2 Service Providers</h3>
+                        <p>We may employ third-party companies and individuals to facilitate our service, provide the service on our behalf, perform service-related activities, or assist us in analyzing how our service is used. These third parties have access to your information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+                        
+                        <h3>4.3 Legal Requirements</h3>
+                        <p>We may disclose your information if required by law, regulation, legal process, or governmental request, including to meet national security or law enforcement requirements.</p>
+                        
+                        <h3>4.4 Safety and Protection</h3>
+                        <p>We may share information when we believe it is necessary to protect the rights, property, or safety of our users, our company, or others. This includes exchanging information with other organizations for fraud protection and credit risk reduction.</p>
+                        
+                        <h3>4.5 Business Transfers</h3>
+                        <p>If we are involved in a merger, acquisition, or asset sale, your information may be transferred as part of that transaction. We will notify you before your information is transferred and becomes subject to a different privacy policy.</p>
+                    </div>
+                    
+                    <div id="data-security" class="privacy-section">
+                        <h2>5. Data Security</h2>
+                        <p>The security of your information is important to us. We implement appropriate technical and organizational measures to protect the information we collect and maintain. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+                        <p>Your personal journal entries and other sensitive data are stored locally on your device and are not uploaded to our servers unless you explicitly enable backup features. In such cases, the data is encrypted during transmission and storage.</p>
+                    </div>
+                    
+                    <div id="childrens-privacy" class="privacy-section">
+                        <h2>6. Children's Privacy</h2>
+                        <p>Our App is not intended for children under the age of 13, and we do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
+                    </div>
+                    
+                    <div id="your-rights" class="privacy-section">
+                        <h2>7. Your Rights and Choices</h2>
+                        <p>You have several rights regarding your personal information:</p>
+                        
+                        <h3>7.1 Access and Update</h3>
+                        <p>You can access and update certain information about you from within the App's settings. You can also contact us to request access to, correction of, or deletion of personal information that you have provided to us.</p>
+                        
+                        <h3>7.2 Location Information</h3>
+                        <p>You can enable or disable location services when you use our App through your device settings. However, some features of the App may not function properly if location services are disabled.</p>
+                        
+                        <h3>7.3 Push Notifications</h3>
+                        <p>We may send push notifications to your device. You can disable these from your device's settings.</p>
+                        
+                        <h3>7.4 Opt-out of Marketing Communications</h3>
+                        <p>You may opt out of receiving promotional communications from us by following the instructions in those communications or by contacting us.</p>
+                        
+                        <h3>7.5 Data Retention</h3>
+                        <p>We retain your information for as long as necessary to provide you with our services and for legitimate and essential business purposes, such as complying with legal obligations, resolving disputes, and enforcing our agreements. When we no longer need personal information, we securely delete or anonymize it.</p>
+                    </div>
+                    
+                    <div id="california-privacy" class="privacy-section">
+                        <h2>8. California Privacy Rights</h2>
+                        <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA) regarding your personal information, including:</p>
+                        <ul>
+                            <li>The right to know what personal information we collect about you and how we use and disclose it</li>
+                            <li>The right to request deletion of your personal information</li>
+                            <li>The right to opt-out of the sale of your personal information (note that we do not sell your personal information)</li>
+                            <li>The right not to be discriminated against for exercising your CCPA rights</li>
+                        </ul>
+                        <p>To exercise these rights, please contact us using the information provided in the "Contact Us" section.</p>
+                    </div>
+                    
+                    <div id="international-users" class="privacy-section">
+                        <h2>9. International Users</h2>
+                        <p>SafeHaven is based in the United States, and the information we collect is governed by U.S. law. If you are accessing the App from outside the United States, please be aware that information collected through the App may be transferred to, processed, stored, and used in the United States and other jurisdictions. Your use of the App or provision of any information constitutes your consent to such transfer, processing, storage, and use.</p>
+                        <p>If you are in the European Economic Area (EEA), you have certain rights under the General Data Protection Regulation (GDPR), including the right to access, correct, delete, restrict processing, object to processing, and data portability.</p>
+                    </div>
+                    
+                    <div id="policy-updates" class="privacy-section">
+                        <h2>10. Privacy Policy Updates</h2>
+                        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                    </div>
+                    
+                    <div id="contact-us" class="privacy-section">
+                        <h2>11. Contact Us</h2>
+                        <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+                        <p>
+                            Email: <a href="mailto:privacy@safehaven.cc">privacy@safehaven.cc</a><br>
+                            Postal Address: SafeHaven, 123 App Street, San Francisco, CA 94123, USA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/app-icon.png" alt="SafeHaven Logo" class="footer-logo-img" width="40" height="40" loading="lazy">
+                    <span class="footer-logo-text">SafeHaven</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#faq">FAQ</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Download</h4>
+                        <div class="footer-download-btn">
+                            <a href="#" class="app-store-btn" aria-label="Download on the App Store">
+                                <img src="images/appstore-badge.png" alt="Download on the App Store" width="150" height="40" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SafeHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', !isExpanded);
+                    menuToggle.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+            }
+            
+            // Back to top button behavior
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            if (backToTopButton) {
+                // Show button when scrolling down
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+                
+                // Scroll to top when clicked
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

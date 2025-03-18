@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - SafeHaven</title>
+    <meta name="description" content="SafeHaven Terms of Service - Learn about the terms governing your use of our app.">
+    <meta name="theme-color" content="#6A89CC">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/app-icon.png">
+      
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile-fixes.css">
+    <link rel="stylesheet" href="css/button-fix.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <style>
+        /* Terms of Service specific styles */
+        .terms-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: var(--color-card-bg);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .terms-content h2 {
+            color: var(--color-primary);
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            font-size: 2.4rem;
+        }
+        
+        .terms-content h3 {
+            color: var(--color-primary-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .terms-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .terms-content ul, 
+        .terms-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .terms-content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+        
+        .terms-content .last-updated {
+            font-style: italic;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        .terms-content .table-of-contents {
+            background-color: rgba(106, 137, 204, 0.1);
+            padding: 2rem;
+            border-radius: var(--border-radius-sm);
+            margin-bottom: 3rem;
+        }
+        
+        .terms-content .table-of-contents h3 {
+            margin-top: 0;
+        }
+        
+        .terms-content .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .terms-content .table-of-contents li {
+            margin-bottom: 1rem;
+        }
+        
+        .terms-content .table-of-contents a {
+            text-decoration: none;
+            color: var(--color-primary);
+            transition: color 0.3s ease;
+        }
+        
+        .terms-content .table-of-contents a:hover {
+            color: var(--color-primary-dark);
+            text-decoration: underline;
+        }
+        
+        .terms-section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 100px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 5rem;
+            height: 5rem;
+            background-color: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            box-shadow: var(--shadow-md);
+            z-index: 100;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--color-primary-dark);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .terms-content {
+                padding: 1.5rem;
+            }
+            
+            .terms-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .terms-content h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/app-icon.png" alt="SafeHaven Logo" class="logo-img" width="48" height="48">
+                        <span class="logo-text">SafeHaven</span>
+                    </a>
+                </div>
+                <nav class="nav" role="navigation" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <section class="terms-of-service">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Terms of Service</h1>
+                    <p>Please read these terms carefully before using SafeHaven</p>
+                </div>
+                
+                <div class="terms-content">
+                    <p class="last-updated">Last Updated: March 17, 2025</p>
+                    
+                    <div class="table-of-contents">
+                        <h3>Contents</h3>
+                        <ul>
+                            <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                            <li><a href="#changes">2. Changes to Terms</a></li>
+                            <li><a href="#eligibility">3. Eligibility</a></li>
+                            <li><a href="#account">4. Account Registration</a></li>
+                            <li><a href="#user-content">5. User Content</a></li>
+                            <li><a href="#emergency-features">6. Emergency Features</a></li>
+                            <li><a href="#subscription">7. Subscription and Payments</a></li>
+                            <li><a href="#intellectual-property">8. Intellectual Property Rights</a></li>
+                            <li><a href="#prohibited-conduct">9. Prohibited Conduct</a></li>
+                            <li><a href="#third-party">10. Third-Party Links and Services</a></li>
+                            <li><a href="#disclaimer">11. Disclaimer of Warranties</a></li>
+                            <li><a href="#limitation">12. Limitation of Liability</a></li>
+                            <li><a href="#indemnification">13. Indemnification</a></li>
+                            <li><a href="#termination">14. Termination</a></li>
+                            <li><a href="#governing-law">15. Governing Law</a></li>
+                            <li><a href="#dispute-resolution">16. Dispute Resolution</a></li>
+                            <li><a href="#miscellaneous">17. Miscellaneous</a></li>
+                            <li><a href="#contact-us">18. Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div id="acceptance" class="terms-section">
+                        <h2>1. Acceptance of Terms</h2>
+                        <p>Welcome to SafeHaven. These Terms of Service ("Terms") govern your access to and use of the SafeHaven mobile application ("App"), and any services, features, content, or applications offered by SafeHaven (collectively, the "Services").</p>
+                        <p>By downloading, accessing, or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Services.</p>
+                    </div>
+                    
+                    <div id="changes" class="terms-section">
+                        <h2>2. Changes to Terms</h2>
+                        <p>We may modify these Terms at any time. We will notify you of any changes by posting the updated Terms on this page and updating the "Last Updated" date. Your continued use of the Services following the posting of revised Terms means you accept and agree to the changes. We encourage you to review the Terms whenever you access or use our Services.</p>
+                    </div>
+                    
+                    <div id="eligibility" class="terms-section">
+                        <h2>3. Eligibility</h2>
+                        <p>You must be at least 13 years old to use our Services. If you are under 18, you represent that you have your parent or guardian's permission to use the Services and that they have read and agree to these Terms on your behalf.</p>
+                        <p>By using the Services, you represent and warrant that:</p>
+                        <ul>
+                            <li>You have the legal capacity to enter into these Terms</li>
+                            <li>You are not prohibited from using the Services under applicable law</li>
+                            <li>You will use the Services in compliance with these Terms and all applicable laws and regulations</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="account" class="terms-section">
+                        <h2>4. Account Registration</h2>
+                        <p>To access certain features of the Services, you may need to create an account. When registering for an account, you agree to provide accurate, current, and complete information. You are responsible for safeguarding your account credentials and for any activity that occurs under your account. You must notify us immediately of any unauthorized use of your account.</p>
+                        <p>We reserve the right to disable your account if we determine, in our sole discretion, that you have violated these Terms or that your account poses a security risk.</p>
+                    </div>
+                    
+                    <div id="user-content" class="terms-section">
+                        <h2>5. User Content</h2>
+                        <p>Our Services allow you to create, store, and share content, such as journal entries, task lists, and other materials (collectively, "User Content"). You retain all rights to your User Content, but you grant us a non-exclusive, royalty-free, transferable, sublicensable, worldwide license to use, store, and display your User Content in connection with providing the Services.</p>
+                        <p>You represent and warrant that:</p>
+                        <ul>
+                            <li>You own or have the necessary rights to your User Content</li>
+                            <li>Your User Content does not violate the rights of any third party, including intellectual property rights and privacy rights</li>
+                            <li>Your User Content complies with these Terms and all applicable laws and regulations</li>
+                        </ul>
+                        <p>We are not responsible for any User Content that you submit or share through the Services. We reserve the right to remove any User Content that violates these Terms or that we find objectionable for any reason, without prior notice.</p>
+                    </div>
+                    
+                    <div id="emergency-features" class="terms-section">
+                        <h2>6. Emergency Features</h2>
+                        <p>SafeHaven offers emergency features designed to connect users with emergency services and designated contacts during emergency situations. By using these features, you acknowledge and agree to the following:</p>
+                        <ul>
+                            <li>The emergency features are provided for convenience and are not a substitute for traditional emergency services</li>
+                            <li>We do not guarantee that the emergency features will work in all circumstances or locations</li>
+                            <li>We are not responsible for any delayed, failed, or erroneous transmission of emergency alerts or communications</li>
+                            <li>You should always call traditional emergency services (e.g., 911 in the United States) directly in life-threatening emergencies</li>
+                            <li>You are responsible for ensuring that your emergency contact information is accurate and up-to-date</li>
+                            <li>You must obtain consent from your designated emergency contacts before adding them to the App</li>
+                        </ul>
+                        <p>You agree to use the emergency features responsibly and only for legitimate emergencies. Misuse of the emergency features may result in termination of your account and potential legal consequences.</p>
+                    </div>
+                    
+                    <div id="subscription" class="terms-section">
+                        <h2>7. Subscription and Payments</h2>
+                        <p>Some features of our Services are available only through a paid subscription ("Premium Features"). By subscribing to Premium Features, you agree to the following terms:</p>
+                        <ul>
+                            <li>Subscription fees are charged at the beginning of each billing cycle</li>
+                            <li>Subscriptions automatically renew unless you cancel before the renewal date</li>
+                            <li>You may cancel your subscription at any time through your App Store account settings</li>
+                            <li>We do not provide refunds for partially used subscription periods</li>
+                            <li>We may change subscription fees by providing notice at least 30 days in advance</li>
+                            <li>All payments are processed through third-party payment processors (e.g., Apple App Store)</li>
+                        </ul>
+                        <p>You are responsible for all charges incurred under your account, including applicable taxes.</p>
+                    </div>
+                    
+                    <div id="intellectual-property" class="terms-section">
+                        <h2>8. Intellectual Property Rights</h2>
+                        <p>The Services, including all content, features, and functionality, are owned by SafeHaven and its licensors and are protected by copyright, trademark, patent, trade secret, and other intellectual property laws.</p>
+                        <p>These Terms do not grant you any right, title, or interest in the Services or our content, nor any intellectual property rights. You may not copy, modify, distribute, sell, or lease any part of the Services or included software, nor may you reverse engineer or attempt to extract the source code of that software, unless applicable laws prohibit these restrictions or you have our written permission.</p>
+                    </div>
+                    
+                    <div id="prohibited-conduct" class="terms-section">
+                        <h2>9. Prohibited Conduct</h2>
+                        <p>You agree not to use the Services to:</p>
+                        <ul>
+                            <li>Violate any law, regulation, or these Terms</li>
+                            <li>Infringe on the rights of others</li>
+                            <li>Submit false or misleading information</li>
+                            <li>Upload or transmit viruses, malware, or other malicious code</li>
+                            <li>Interfere with or disrupt the Services or servers or networks connected to the Services</li>
+                            <li>Attempt to gain unauthorized access to the Services or other user accounts</li>
+                            <li>Use the Services for any illegal or unauthorized purpose</li>
+                            <li>Harass, abuse, or harm another person</li>
+                            <li>Use our emergency features for non-emergency situations</li>
+                            <li>Impersonate any person or entity</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="third-party" class="terms-section">
+                        <h2>10. Third-Party Links and Services</h2>
+                        <p>The Services may contain links to third-party websites, services, or resources that are not owned or controlled by SafeHaven. We do not endorse or assume responsibility for any third-party content, products, or services. If you access any third-party websites, services, or resources, you do so at your own risk and are subject to the terms and conditions applicable to such websites, services, or resources.</p>
+                    </div>
+                    
+                    <div id="disclaimer" class="terms-section">
+                        <h2>11. Disclaimer of Warranties</h2>
+                        <p>THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                        <p>WE DO NOT WARRANT THAT:</p>
+                        <ul>
+                            <li>THE SERVICES WILL MEET YOUR REQUIREMENTS</li>
+                            <li>THE SERVICES WILL BE AVAILABLE, UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE</li>
+                            <li>THE RESULTS OF USING THE SERVICES WILL BE ACCURATE OR RELIABLE</li>
+                            <li>ANY ERRORS IN THE SERVICES WILL BE CORRECTED</li>
+                        </ul>
+                        <p>THE EMERGENCY FEATURES PROVIDED THROUGH THE SERVICES ARE NOT GUARANTEED TO WORK IN ALL SITUATIONS OR TO CONNECT YOU WITH EMERGENCY SERVICES. WE ARE NOT LIABLE FOR ANY HARM RESULTING FROM RELIANCE ON THESE FEATURES.</p>
+                    </div>
+                    
+                    <div id="limitation" class="terms-section">
+                        <h2>12. Limitation of Liability</h2>
+                        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL SAFEHAVEN, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:</p>
+                        <ul>
+                            <li>YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE SERVICES</li>
+                            <li>ANY CONDUCT OR CONTENT OF ANY THIRD PARTY ON THE SERVICES</li>
+                            <li>ANY CONTENT OBTAINED FROM THE SERVICES</li>
+                            <li>UNAUTHORIZED ACCESS, USE, OR ALTERATION OF YOUR TRANSMISSIONS OR CONTENT</li>
+                            <li>RELIANCE ON THE EMERGENCY FEATURES OR OTHER FUNCTIONALITY OF THE APP</li>
+                        </ul>
+                        <p>IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT PAID BY YOU, IF ANY, FOR ACCESSING OR USING THE SERVICES DURING THE TWELVE (12) MONTHS PRIOR TO THE CLAIM.</p>
+                    </div>
+                    
+                    <div id="indemnification" class="terms-section">
+                        <h2>13. Indemnification</h2>
+                        <p>You agree to defend, indemnify, and hold harmless SafeHaven, its officers, directors, employees, and agents, from and against any and all claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to attorney's fees) arising from:</p>
+                        <ul>
+                            <li>Your use of and access to the Services</li>
+                            <li>Your violation of any term of these Terms</li>
+                            <li>Your violation of any third party right, including without limitation any copyright, property, or privacy right</li>
+                            <li>Any claim that your User Content caused damage to a third party</li>
+                        </ul>
+                        <p>This defense and indemnification obligation will survive these Terms and your use of the Services.</p>
+                    </div>
+                    
+                    <div id="termination" class="terms-section">
+                        <h2>14. Termination</h2>
+                        <p>We may terminate or suspend your account and access to the Services immediately, without prior notice or liability, for any reason, including but not limited to, if you breach these Terms.</p>
+                        <p>Upon termination, your right to use the Services will immediately cease. If you wish to terminate your account, you may simply discontinue using the Services or delete your account through the App's settings.</p>
+                        <p>All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+                    </div>
+                    
+                    <div id="governing-law" class="terms-section">
+                        <h2>15. Governing Law</h2>
+                        <p>These Terms shall be governed by and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions. You agree that any legal action or proceeding arising out of or relating to these Terms or the Services shall be brought exclusively in the state or federal courts located in San Francisco County, California, and you consent to the personal jurisdiction of such courts.</p>
+                    </div>
+                    
+                    <div id="dispute-resolution" class="terms-section">
+                        <h2>16. Dispute Resolution</h2>
+                        <p>Any dispute, claim, or controversy arising out of or relating to these Terms or the Services shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. The arbitration shall take place in San Francisco, California, and shall be conducted in English. Judgment on the award rendered by the arbitrator may be entered in any court having jurisdiction thereof.</p>
+                        <p>Notwithstanding the foregoing, you agree that we may seek injunctive or other equitable relief to protect our intellectual property rights or to prevent unauthorized use of the Services in any court of competent jurisdiction.</p>
+                        <p>ANY ARBITRATION UNDER THESE TERMS WILL TAKE PLACE ON AN INDIVIDUAL BASIS; CLASS ARBITRATIONS AND CLASS ACTIONS ARE NOT PERMITTED. YOU UNDERSTAND THAT BY AGREEING TO THESE TERMS, YOU AND SAFEHAVEN ARE EACH WAIVING THE RIGHT TO TRIAL BY JURY OR TO PARTICIPATE IN A CLASS ACTION.</p>
+                    </div>
+                    
+                    <div id="miscellaneous" class="terms-section">
+                        <h2>17. Miscellaneous</h2>
+                        <h3>17.1 Entire Agreement</h3>
+                        <p>These Terms, together with our Privacy Policy and any other legal notices published by us on the Services, constitute the entire agreement between you and SafeHaven concerning the Services.</p>
+                        
+                        <h3>17.2 Severability</h3>
+                        <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect and enforceable.</p>
+                        
+                        <h3>17.3 Waiver</h3>
+                        <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of such right or provision. The waiver of any such right or provision will be effective only if in writing and signed by an authorized representative of SafeHaven.</p>
+                        
+                        <h3>17.4 Assignment</h3>
+                        <p>You may not assign or transfer these Terms, by operation of law or otherwise, without our prior written consent. Any attempt by you to assign or transfer these Terms without our consent shall be null and void. We may freely assign or transfer these Terms without restriction.</p>
+                    </div>
+                    
+                    <div id="contact-us" class="terms-section">
+                        <h2>18. Contact Us</h2>
+                        <p>If you have any questions about these Terms, please contact us at:</p>
+                        <p>
+                            Email: <a href="mailto:legal@safehaven.cc">legal@safehaven.cc</a><br>
+                            Postal Address: SafeHaven, 123 App Street, San Francisco, CA 94123, USA
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/app-icon.png" alt="SafeHaven Logo" class="footer-logo-img" width="40" height="40" loading="lazy">
+                    <span class="footer-logo-text">SafeHaven</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html#features">Features</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#faq">FAQ</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-of-service.html">Terms of Service</a></li>
+                            <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Download</h4>
+                        <div class="footer-download-btn">
+                            <a href="#" class="app-store-btn" aria-label="Download on the App Store">
+                                <img src="images/appstore-badge.png" alt="Download on the App Store" width="150" height="40" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SafeHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    menuToggle.setAttribute('aria-expanded', !isExpanded);
+                    menuToggle.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+            }
+            
+            // Back to top button behavior
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            if (backToTopButton) {
+                // Show button when scrolling down
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+                
+                // Scroll to top when clicked
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
